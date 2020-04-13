@@ -25,8 +25,8 @@ Deck::Deck() {
 void Deck::shuffle() {
 
     for(int i = 0; i < SIZE*2; i++) {
-        int num1 = rand() % SIZE;
-        int num2 = rand() % SIZE;
+        unsigned int num1 = rand() % SIZE;
+        unsigned int num2 = rand() % SIZE;
 
         Card temp = myCards[num1];
         myCards[num1] = myCards[num2];
@@ -45,7 +45,5 @@ Card Deck::dealCard() {
 }
 
 int Deck::size() const {
-
     return SIZE - myIndex;
-
 }
