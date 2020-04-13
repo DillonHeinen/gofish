@@ -24,17 +24,21 @@ void Player::bookCards(Card c1, Card c2) {
 }
 
 bool Player::checkHandForBook(Card &c1, Card &c2) {     // return to later
-    Card::Suit check;
+    vector <Card>::iterator iter1, iter2;
 
-    for(vector <Card>::iterator iter = myHand.begin(); iter < myHand.end(); iter++) {
-        //check = ;
+    for(iter1 = myHand.begin(); iter1 < myHand.end(); iter1++) {
+        for(iter2 = myHand.begin(); iter2 < myHand.end(); iter2++) {
+            if(iter1->sameSuitAs(*iter2)) {
+                c1 = *iter1;
+                c2 = *iter2;
+                return true;
+            }
+        }
     }
+    return false;
 }
 
 bool Player::rankInHand(Card c) const {
-    int rank = c.getRank();
-    vector <Card>::iterator iter;
-
     for(vector <Card>::const_iterator iter = myHand.begin(); iter < myHand.end(); iter++) {
         if(iter->getRank() == c.getRank()) {
             return true;
@@ -44,7 +48,7 @@ bool Player::rankInHand(Card c) const {
 }
 
 Card Player::chooseCardFromHand() const {
-    int choice = rand() % myHand.size();
+    unsigned int choice = rand() % myHand.size();
     return myHand.at(choice);
 }
 
@@ -66,6 +70,7 @@ Card Player::removeCardFromHand(Card c) {
             return yoink;
         }
     }
+    return yoink;
 }
 
 string Player::showHand() const {
@@ -101,9 +106,22 @@ int Player::getBookSize() const {
 }
 
 bool Player::checkHandForPair(Card &c1, Card &c2) {     // return to later
-
+    vector <Card>::iterator iter1, iter2;
+    for(iter1 = myHand.begin(); iter1 < myHand.end(); iter1++) {
+        for(iter2 = myHand.begin(); iter2 < myHand.end(); iter2++) {
+            c1 = *iter1;
+            c2 = *iter2;
+            return true;
+        }
+    }
+    return false;
 }
 
 bool Player::sameRankInHand(Card c) const {     // return to later
-
+    for(vector <Card>::const_iterator iter = myHand.begin(); iter < myHand.end(); iter++) {
+        if(iter->getRank() == c.getRank()) {
+            return true;
+        }
+    }
+    return false;
 }
