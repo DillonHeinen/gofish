@@ -6,16 +6,11 @@
 using namespace std;
 
 class Card {
-private:
+ public:
 
-    int myRank;
-    int mySuit;
+    enum Suit {spades, hearts, diamonds, clubs};
 
-public:
-
-    enum Suit {spaces, hearts, diamonds, clubs};
-
-    Card();
+    Card();     // default to ace of spades
     Card(int rank, Suit s);
 
     string toString()               const;      // return string version e.g. Ac 4h Js
@@ -23,13 +18,18 @@ public:
     int getRank()                   const;      // return rank, 1, ..., 13
     string suitString(Suit s)       const;      // return "s", "h", ...
 
-    string rankString(int r)        const;      // return "A", "2", ..., "Q"
+    string rankString(int r)        const;      // return "A", "2", ..., "K"
 
     bool operator == (const Card &rhs) const;
     bool operator != (const Card &rhs) const;
 
+private:
+
+    int myRank;
+    Suit mySuit;
+
 };
 
-ostream &operator <<(ostream &out, const Card &c);
+ostream &operator << (ostream &out, const Card &c);
 
 #endif
