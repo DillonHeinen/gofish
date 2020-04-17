@@ -111,12 +111,17 @@ int main() {
             p2.addCard(d.dealCard());
         }
         oFile << endl;
+
+        if(p1.getBookSize() > p2.getBookSize()) {
+            oFile << p1.getName() << " has more books and wins the game!" << endl;
+        }
+        else {
+            oFile << p2.getName() << " has more books and wins the game!" << endl;
+        }
     }
     oFile << "Thus concludes Go Fish!" << endl;
 //    cout << p1.showBooks() << endl;
 //    cout << p2.showBooks() << endl;
-
-
 
     oFile.close();
 
