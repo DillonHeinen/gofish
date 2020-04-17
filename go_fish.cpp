@@ -15,7 +15,7 @@ int main() {
     oFile << "Go Fish!" << endl;
     oFile << endl;
 
-    int numCards = 7;              // 7 cards to be dealt for two players
+    const int numCards = 7;              // 7 cards to be dealt for two players
 
     Deck d;
     d.shuffle();
