@@ -1,0 +1,237 @@
+Go Fish!
+
+Dillon books 6
+
+Dillon asks - Do you have a 6?
+Laurel says - Go Fish.
+Dillon draws Jh
+Dillon books the J
+
+Laurel asks - Do you have a J?
+Dillon says - Go Fish.
+Laurel draws 8c
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a J?
+Laurel says - Go Fish.
+Dillon draws 3d
+
+Laurel asks - Do you have a J?
+Dillon says - Yes. I have a J.
+Laurel books the 9
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a 9?
+Laurel says - Yes. I have a 9.
+Dillon books the 7
+
+Laurel asks - Do you have a 7?
+Dillon says - Go Fish.
+Laurel draws 2s
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a 7?
+Laurel says - Go Fish.
+Dillon draws 4s
+Dillon books the 4
+
+Laurel asks - Do you have a 4?
+Dillon says - Go Fish.
+Laurel draws 5h
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a 4?
+Laurel says - Go Fish.
+Dillon draws 5c
+
+Laurel asks - Do you have a 4?
+Dillon says - Yes. I have a 4.
+Laurel books the 3
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a 3?
+Laurel says - Go Fish.
+Dillon draws 2h
+
+Laurel asks - Do you have a 3?
+Dillon says - Go Fish.
+Laurel draws Qs
+Laurel books the Q
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a Q?
+Laurel says - Yes. I have a Q.
+Dillon books the 5
+
+Laurel asks - Do you have a 5?
+Dillon says - Go Fish.
+Laurel draws Qc
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a 5?
+Laurel says - Yes. I have a 5.
+Dillon books the 2
+
+Laurel asks - Do you have a 2?
+Dillon says - Go Fish.
+Laurel draws Js
+Laurel books the J
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a J?
+Laurel says - Go Fish.
+Dillon draws 8d
+
+Laurel asks - Do you have a J?
+Dillon says - Go Fish.
+Laurel draws 8s
+Laurel books the 8
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a 8?
+Laurel says - Go Fish.
+Dillon draws 5s
+
+Laurel asks - Do you have a 8?
+Dillon says - Go Fish.
+Laurel draws 9h
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a 8?
+Laurel says - Go Fish.
+Dillon draws 3c
+
+Laurel asks - Do you have a 8?
+Dillon says - Go Fish.
+Laurel draws 10h
+Laurel books the 10
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 10?
+Laurel says - Go Fish.
+Dillon draws 4d
+
+Laurel asks - Do you have a 10?
+Dillon says - Go Fish.
+Laurel draws 7h
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 10?
+Laurel says - Go Fish.
+Dillon draws 7s
+
+Laurel asks - Do you have a 10?
+Dillon says - Go Fish.
+Laurel draws Ah
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 10?
+Laurel says - Go Fish.
+Dillon draws Ad
+Dillon books the A
+
+Laurel asks - Do you have a A?
+Dillon says - Go Fish.
+Laurel draws 2d
+
+Dillon has more books and wins the game!
+Dillon asks - Do you have a A?
+Laurel says - Go Fish.
+Dillon draws 10c
+
+Laurel asks - Do you have a A?
+Dillon says - Go Fish.
+Laurel draws As
+Laurel books the A
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a A?
+Laurel says - Go Fish.
+Dillon draws 6s
+
+Laurel asks - Do you have a A?
+Dillon says - Go Fish.
+Laurel draws Ks
+Laurel books the K
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a K?
+Laurel says - Go Fish.
+Dillon draws 6h
+Dillon books the 6
+
+Laurel asks - Do you have a 6?
+Dillon says - Go Fish.
+Laurel draws Kd
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 6?
+Laurel says - Go Fish.
+Dillon draws 2c
+
+Laurel asks - Do you have a 6?
+Dillon says - Go Fish.
+Laurel draws 3s
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 6?
+Laurel says - Go Fish.
+Dillon draws Kc
+
+Laurel asks - Do you have a 6?
+Dillon says - Yes. I have a 6.
+Laurel books the 2
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 2?
+Laurel says - Yes. I have a 2.
+Dillon books the 3
+
+Laurel asks - Do you have a 3?
+Dillon says - Go Fish.
+Laurel draws 9c
+Laurel books the 9
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 9?
+Laurel says - Go Fish.
+Dillon draws 10s
+Dillon books the 10
+
+Laurel asks - Do you have a 10?
+Dillon says - Yes. I have a 10.
+Laurel books the K
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a K?
+Laurel says - Go Fish.
+Dillon draws 8h
+Dillon books the 8
+
+Laurel asks - Do you have a 8?
+Dillon says - Yes. I have a 8.
+Laurel books the 7
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 7?
+Laurel says - Go Fish.
+Dillon draws Qh
+
+Laurel asks - Do you have a 7?
+Dillon says - Yes. I have a 7.
+Laurel books the Q
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a Q?
+Laurel says - Yes. I have a Q.
+Dillon books the 5
+
+
+Laurel has more books and wins the game!
+Dillon asks - Do you have a 5?
+Laurel says - Yes. I have a 5.
+Dillon books the 4
+
+
+Laurel has more books and wins the game!
+Thus concludes Go Fish!

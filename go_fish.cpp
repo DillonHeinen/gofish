@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <string>
+#include <time.h>
 
 #include "deck.h"
 #include "player.h"
@@ -11,11 +12,14 @@ using namespace std;
 int main() {
 
     ofstream oFile;
-    oFile.open("test.txt");
+    oFile.open("gofish_results.txt");
     oFile << "Go Fish!" << endl;
     oFile << endl;
 
+    srand(time(0));
+
     const int numCards = 7;              // 7 cards to be dealt for two players
+    const int empty = 0;
 
     Deck d;
     d.shuffle();
@@ -40,24 +44,24 @@ int main() {
         p1.bookCards(c1, c2);
         p1.removeCardFromHand(c1);
         p1.removeCardFromHand(c2);
-        oFile << p1.getName() << " books " << c1.getRank() << endl;
+        oFile << p1.getName() << " books " << c1.rankString(c1.getRank()) << endl;
     }
     while(p2.checkHandForBook(c1, c2)) {        // initial booking of cards for p2
         p2.bookCards(c1, c2);
         p2.removeCardFromHand(c1);
         p2.removeCardFromHand(c2);
-        oFile << p2.getName() << " books " << c2.getRank() << endl;
+        oFile << p2.getName() << " books " << c2.rankString(c2.getRank()) << endl;
     }
     oFile << endl;
 
-    while((d.size() != 0) || ((p1.getHandSize() != 0) || (p2.getHandSize() != 0))) {
+    while((d.size() != empty) || ((p1.getHandSize() != empty) || (p2.getHandSize() != empty))) {
 //        cout << endl;
 //        cout << endl;
 //        cout << "Dillon is " << p1.showHand() << endl;
 //        cout << "Laurel is " << p2.showHand() << endl;
 //        cout << endl;
 
-        if(p1.getHandSize() != 0) {                                     // player 1's turn
+        if(p1.getHandSize() != empty) {                                     // player 1's turn
             Card temp = p1.chooseCardFromHand();
             oFile << p1.getName() << " asks - Do you have a " << c1.rankString(temp.getRank()) << "?" << endl;
 
@@ -66,7 +70,7 @@ int main() {
                 p1.addCard(p2.removeCardFromHand(temp));
             } else {
                 oFile << p2.getName() << " says - Go Fish." << endl;
-                if (d.size() != 0) {            // deal card for go fish
+                if (d.size() != empty) {            // deal card for go fish
                     Card deal = d.dealCard();
                     p1.addCard(deal);
                     oFile << p1.getName() << " draws " << deal.toString() << endl;
@@ -79,13 +83,13 @@ int main() {
             p1.removeCardFromHand(c2);
             oFile << p1.getName() << " books the " << c1.rankString(c1.getRank()) << endl;
         }
-        if((d.size() != 0) && (p1.getHandSize() == 0)) {
+        if((d.size() != empty) && (p1.getHandSize() == empty)) {
             p1.addCard(d.dealCard());
         }
 
         oFile << endl;
 
-        if(p2.getHandSize() != 0) {                                     // player 2's turn
+        if(p2.getHandSize() != empty) {                                     // player 2's turn
             Card temp = p2.chooseCardFromHand();
             oFile << p2.getName() << " asks - Do you have a " << c2.rankString(temp.getRank()) << "?" << endl;
 
@@ -94,7 +98,7 @@ int main() {
                 p2.addCard(p1.removeCardFromHand(temp));
             } else {
                 oFile << p1.getName() << " says - Go Fish." << endl;
-                if (d.size() != 0) {
+                if (d.size() != empty) {
                     Card deal = d.dealCard();
                     p2.addCard(deal);
                     oFile << p2.getName() << " draws " << deal.toString() << endl;
@@ -107,7 +111,7 @@ int main() {
             p2.removeCardFromHand(c2);
             oFile << p2.getName() << " books the " << c2.rankString(c2.getRank()) << endl;
         }
-        if((d.size() != 0) && (p2.getHandSize() == 0)) {
+        if((d.size() != empty) && (p2.getHandSize() == empty)) {
             p2.addCard(d.dealCard());
         }
         oFile << endl;
