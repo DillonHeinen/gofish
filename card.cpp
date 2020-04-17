@@ -3,16 +3,21 @@
 using namespace std;
 
 Card::Card() {
+
     myRank = 1;
     mySuit = spades;
+
 }
 
 Card::Card(int rank, Suit s) {
+
     myRank = rank;
     mySuit = s;
+
 }
 
 string Card::toString() const {
+
     string rank;
     switch(myRank) {
         case 1:
@@ -51,7 +56,9 @@ string Card::toString() const {
 }
 
 bool Card::sameSuitAs(const Card &c) const {
+
     return (this->mySuit == c.mySuit);
+
 }
 
 int Card::getRank() const {
@@ -59,6 +66,7 @@ int Card::getRank() const {
 }
 
 string Card::suitString(Suit s) const {
+
     string suit;
     switch (s) {
         case spades:
@@ -78,6 +86,7 @@ string Card::suitString(Suit s) const {
 }
 
 string Card::rankString(int r) const {
+
     string rank;
     switch(myRank) {
         case 1:
@@ -99,14 +108,20 @@ string Card::rankString(int r) const {
 }
 
 bool Card::operator == (const Card &rhs) const {
+
     return (this->myRank == rhs.myRank) && (this->mySuit == rhs.mySuit);
+
 }
 
 bool Card::operator != (const Card &rhs) const {
+
     return (this->myRank != rhs.myRank) || (this->mySuit != rhs.mySuit);
+
 }
 
 ostream &operator << (ostream &out, const Card &c) {
+
     out << c.toString();
     return out;
+
 }
