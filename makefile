@@ -14,4 +14,4 @@ player.o: player.cpp
 	g++ -c player.cpp
 	
 clean:
-	rm *.o math
+	rm *.o gofish
